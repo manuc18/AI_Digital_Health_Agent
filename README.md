@@ -1,6 +1,6 @@
 # AI Digital Health Agent 🏥
 
-A robust, end-to-end AI-powered digital health assistant capable of symptom analysis, severity classification, medication guidance, and consultation summarization.
+AI-powered digital health assistant capable of symptom analysis, severity classification, medication guidance, and consultation summarization.
 
 ## 🚀 Features
 
@@ -37,24 +37,36 @@ AI_Digital_Health_Agent/
 
 ## ⚡ Quick Start
 
-1.  **Install Dependencies**:
+1.  **Data Setup**:
+    *   Download the **MedDialog** dataset from Kaggle: [MedDialogue Dataset](https://www.kaggle.com/datasets/hrezaeiyork/meddialogue)
+    *   Create a folder `data/MedDialog/` and extract the files there.
+    *   Ensure `english-train.json` is present in `data/MedDialog/`.
+
+2.  **Install Dependencies**:
     ```bash
     pip install -r requirements.txt
     pip install accelerate
     ```
 
-2.  **Run the Web App**:
+3.  **Generate Models (Optional but Recommended)**:
+    The fine-tuned models are excluded from the repo due to size. To generate them locally:
+    ```bash
+    python src/models/finetune.py
+    ```
+    *If skipped, the system will use the base ClinicalBERT model.*
+
+4.  **Run the Web App**:
     ```bash
     streamlit run app.py
     ```
 
-3.  **Run the Backend Pipeline** (Optional):
+5.  **Run the Backend Pipeline** (Optional):
     To verify data processing, fine-tuning, and training:
     ```bash
     python main.py
     ```
 
-4.  **Evaluate Models** (Optional):
+6.  **Evaluate Models** (Optional):
     To see detailed accuracy metrics:
     ```bash
     python src/evaluate.py
