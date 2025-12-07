@@ -6,4 +6,5 @@ __pycache__/
 data/models/
 data/processed/
 data/MedDialog/
+data/reports/
 src/models/fine_tuned_bert/
