@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+data/models/
+data/processed/
+data/MedDialog/
+src/models/fine_tuned_bert/

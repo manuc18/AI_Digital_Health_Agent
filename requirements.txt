@@ -1,0 +1,11 @@
+pandas
+numpy
+tqdm
+scikit-learn
+torch
+transformers
+matplotlib
+seaborn
+wordcloud
+streamlit
+accelerate
